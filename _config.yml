@@ -1,6 +1,7 @@
 title: "orlopau"
 name: "orlopau"
 subtitle: "Likes IoT and the Web.<br>Projects and other things below."
+markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed

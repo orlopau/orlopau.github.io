@@ -18,3 +18,13 @@ html, body {
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+.divider {
+  background: $primary-color;
+  width: 100%;
+  height: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}

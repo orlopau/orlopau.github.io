@@ -1,6 +1,6 @@
 ---
 layout: default
-stylesheet: assets/css/index.css
+stylesheet: /assets/css/index.css
 ---
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
     <defs>
@@ -35,3 +35,13 @@ stylesheet: assets/css/index.css
     </nav>
 </header>
 <div class="divider"></div>
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <span>{{post.date | date_to_string}}</span>
+            <h1>{{post.title}}</h1>
+            {{post.excerpt}}
+            <a href="{{post.url}}">Read more</a>
+        </li>
+    {% endfor %}
+</ul>

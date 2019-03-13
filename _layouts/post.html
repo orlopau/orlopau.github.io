@@ -1,0 +1,15 @@
+---
+layout: default
+stylesheet: /assets/css/post.css
+---
+<div class="divider"></div>
+<article>
+    <span id="date">{{page.date | date_to_string}}</span>
+    <h1 id="title">{{page.title}}</h1>
+    {{content}}
+</article>
+<nav>
+    <a href="/index.html">Back</a>
+    <a href="/about.html">About</a>
+    <a href="/imprint.html">Imprint</a>
+</nav>
