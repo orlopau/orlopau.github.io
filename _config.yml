@@ -1,4 +1,6 @@
 title: "orlopau"
+name: "orlopau"
+subtitle: "Likes IoT and the Web.<br>Projects and other things below."
 sass:
   sass_dir: _sass
   style: compressed
