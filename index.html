@@ -14,17 +14,17 @@ stylesheet: /assets/css/index.css
 </svg>
 <header>
     <div id="profile">
-        <div class="circle">
+        <a class="circle" href="{{site.email_link}}">
             <svg>
                 <use xlink:href="#icon-email"></use>
             </svg>
-        </div>
+        </a>
         <img src="assets/img/profile_pic.jpeg" alt="Profile picture"/>
-        <div class="circle">
+        <a class="circle" href="{{site.github_link}}">
             <svg>
                 <use xlink:href="#icon-github"></use>
             </svg>
-        </div>
+        </a>
     </div>
     <span id="name">{{site.name}}</span>
     <span id="subtitle">{{site.subtitle}}</span>

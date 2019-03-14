@@ -1,6 +1,8 @@
 title: "orlopau"
 name: "orlopau"
 subtitle: "Likes IoT and the Web.<br>Projects and other things below."
+github_link: "https://github.com/orlopau"
+email_link: "mailto:paul.orlob@mailbox.tu-dresden.de"
 markdown: kramdown
 kramdown:
   input: GFM
