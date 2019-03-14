@@ -1,0 +1,57 @@
+$primary-color: rgb(54, 109, 185);
+$margin: 16px;
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.divider {
+  background: $primary-color;
+  width: 100%;
+  height: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+pre {
+  font-size: .7rem;
+  margin: .3rem 0;
+}
+
+div.highlight {
+  position: relative;
+  margin-left: -$margin;
+  width: 100vw;
+}
+
+pre.highlight {
+  padding-left: $margin/2;
+}
+
+.highlight {
+  overflow: scroll;
+  display: block;
+
+  .rouge-gutter {
+    display: block;
+    margin-right: 1rem;
+    padding: 0 .5rem 0 0;
+    border-right: 1px solid white;
+  }
+}

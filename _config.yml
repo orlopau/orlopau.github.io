@@ -2,6 +2,16 @@ title: "orlopau"
 name: "orlopau"
 subtitle: "Likes IoT and the Web.<br>Projects and other things below."
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 sass:
   sass_dir: _sass
   style: compressed
