@@ -12,36 +12,40 @@ stylesheet: /assets/css/index.css
         </symbol>
     </defs>
 </svg>
-<header>
-    <div id="profile">
-        <a class="circle" href="{{site.email_link}}">
-            <svg>
-                <use xlink:href="#icon-email"></use>
-            </svg>
-        </a>
-        <img src="assets/img/profile_pic.jpeg" alt="Profile picture"/>
-        <a class="circle" href="{{site.github_link}}">
-            <svg>
-                <use xlink:href="#icon-github"></use>
-            </svg>
-        </a>
-    </div>
-    <span id="name">{{site.name}}</span>
-    <span id="subtitle">{{site.subtitle}}</span>
-    <nav>
-        <a href="about.html">About</a>
-        <a href="index.html">Blog</a>
-        <a href="imprint.html">Legal</a>
-    </nav>
-</header>
+<div class="container">
+    <header>
+        <div id="profile">
+            <a class="circle" href="{{site.email_link}}">
+                <svg>
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            </a>
+            <img src="assets/img/profile_pic.jpeg" alt="Profile picture"/>
+            <a class="circle" href="{{site.github_link}}">
+                <svg>
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+        </div>
+        <span id="name">{{site.name}}</span>
+        <span id="subtitle">{{site.subtitle}}</span>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="index.html">Blog</a>
+            <a href="imprint.html">Legal</a>
+        </nav>
+    </header>
+</div>
 <div class="divider"></div>
-<ul>
-    {% for post in site.posts %}
+<div class="container">
+    <ul>
+        {% for post in site.posts %}
         <li>
             <span>{{post.date | date_to_string}}</span>
             <h1>{{post.title}}</h1>
             {{post.excerpt}}
             <a href="{{post.url}}">Read more</a>
         </li>
-    {% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
+</div>

@@ -11,8 +11,11 @@ header {
   padding-top: $margin;
   text-align: center;
   height: 30vh;
-  min-height: 230px;
+  min-height: 240px;
   justify-content: space-between;
+  max-width: 500px;
+  max-height: 280px;
+  width: 100%;
 
   $profile-pic-size: 5.5rem;
   $circle-size: $profile-pic-size * 0.45;
@@ -22,6 +25,7 @@ header {
   #name {
     font-weight: 600;
     font-size: 2.3rem;
+    line-height: 2.3rem;
   }
 
   #subtitle {
@@ -81,6 +85,7 @@ header {
 ul {
   list-style: none;
   padding: 0 $margin $margin $margin*1.5;
+  max-width: 800px;
 
   li{
     display: flex;
