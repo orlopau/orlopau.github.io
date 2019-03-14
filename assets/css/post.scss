@@ -32,6 +32,7 @@ article {
   width: 100%;
   padding: $margin*2 $margin;
   min-height: calc(100% - #{$footer-size});
+  max-width: 950px;
 
   #date{
     font-weight: 300;
