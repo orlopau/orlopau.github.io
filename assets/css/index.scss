@@ -16,6 +16,9 @@ header {
   max-width: 500px;
   max-height: 280px;
   width: 100%;
+  @media only screen and (min-width : 1440px) {
+    min-height: 310px;
+  }
 
   $profile-pic-size: 5.5rem;
   $circle-size: $profile-pic-size * 0.45;
@@ -91,7 +94,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: $margin;
+    margin-top: 1.5rem;
 
     span{
       font-size: 0.95rem;
