@@ -31,7 +31,7 @@ nav {
 article {
   width: 100%;
   padding: $margin*2 $margin;
-  min-height: calc(100% - #{$footer-size});
+  min-height: calc(100vh - #{$footer-size});
   max-width: 950px;
 
   #date{
