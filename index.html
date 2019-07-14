@@ -1,6 +1,7 @@
 ---
 layout: default
 stylesheet: /assets/css/index.css
+excerpt: A blog about the internet of things, data, programming and technology in general. Written by Paul Orlob.
 ---
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
     <defs>
@@ -38,7 +39,7 @@ stylesheet: /assets/css/index.css
         <li>
             <span>{{post.date | date_to_string}}</span>
             <h1>{{post.title}}</h1>
-            {{post.excerpt}}
+            <p>{{post.excerpt | strip_html | rstrip}}</p>
             <a href="{{post.url}}">Read more</a>
         </li>
         {% endfor %}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Paul's Blog" />
+    <meta name="description" content="{{page.excerpt | strip_html | rstrip}}" />
     {% include favicons_head.html %}
     {% if page.stylesheet %}
     <link rel="stylesheet" href="{{page.stylesheet}}">
