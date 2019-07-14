@@ -4,11 +4,16 @@
 //noinspection CssUnknownTarget
 @import "default";
 
+.header-container {
+  background: $primary-color;
+}
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: $margin;
+  padding-bottom: $margin;
   text-align: center;
   height: 30vh;
   min-height: 240px;
@@ -23,7 +28,11 @@ header {
   $profile-pic-size: 5.5rem;
   $circle-size: $profile-pic-size * 0.45;
   $img-circle-size: $circle-size * 0.7;
-  $icon-color: $primary-color;
+  $icon-color: white;
+
+  span, a {
+    color: white;
+  }
 
   #name {
     font-weight: 600;
@@ -36,16 +45,6 @@ header {
     font-size: 1.3rem;
   }
 
-  .circle {
-    border-radius: 50%;
-    border: 2px solid $icon-color;
-    width: $circle-size;
-    height: $circle-size;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   #profile {
     display: flex;
     flex-direction: row;
@@ -54,6 +53,14 @@ header {
     width: 100%;
 
     .circle {
+      border-radius: 50%;
+      border: 2px solid $icon-color;
+      width: $circle-size;
+      height: $circle-size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       svg {
         width: $img-circle-size;
         height: $img-circle-size;
@@ -74,7 +81,6 @@ header {
     justify-content: space-evenly;
 
     a {
-      color: $primary-color;
       text-decoration: underline;
       font-size: 1.5rem;
     }

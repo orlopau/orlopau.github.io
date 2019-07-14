@@ -12,7 +12,7 @@ stylesheet: /assets/css/index.css
         </symbol>
     </defs>
 </svg>
-<div class="container">
+<div class="container header-container">
     <header>
         <div id="profile">
             <a class="circle" href="{{site.email_link}}">
@@ -32,7 +32,6 @@ stylesheet: /assets/css/index.css
         {% include nav.html %}
     </header>
 </div>
-<div class="divider"></div>
 <div class="container">
     <ul>
         {% for post in site.posts %}
